@@ -13,7 +13,7 @@ parsed text.
 
 Run
 
-     bundle install
+     bundle install --path vendor/bundle
 
 ## Standalone operation
 
