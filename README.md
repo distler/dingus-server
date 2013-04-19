@@ -27,15 +27,11 @@ and then access the server at
 
 ## Using Passenger
 
-Make sure the `config/environment.rb` file is owned by the
-user running the httpd server
-
-    chown www config/environment.rb
-
-Add 
+Make sure the `config/environment.rb` file is readable by the
+user running the httpd server. Add 
 
      PassengerPreStart http://myhost.com/dingus/json
-	 RackBaseURI /dingus
+     RackBaseURI /dingus
 	
 to your `httpd.conf` file (adjusting the sub-URI where you
 want the server to appear, according to taste).
@@ -52,3 +48,14 @@ Restart Apache, and then access the server at
 ## Other Markdown interpreters
 
 Customize the `parse`, `parser_name` and `parser_version` methods in `app/controller/application_controller.rb` to suite your Markdown interpreter. Edit the `Gemfile` appropriately, and you are off to the races.
+
+## Updating
+
+When a new version of of the Markdown interpreter is released, do a
+
+     bundle update
+
+and either restart the server or (if you're using Passenger)
+
+     sudo touch tmp/restart.txt
+
