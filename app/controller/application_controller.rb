@@ -30,7 +30,7 @@ private
   end
   
   def parser_name
-    'Maruku'
+    'Maruku (Math-Enabled)'
   end
   
   def parser_version
