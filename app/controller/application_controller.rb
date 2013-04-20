@@ -1,4 +1,3 @@
-$: << File.expand_path('../../../lib', __FILE__)
 require 'maruku'
 require 'maruku/ext/math'
 require 'itex_stringsupport'
