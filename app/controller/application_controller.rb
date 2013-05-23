@@ -25,7 +25,7 @@ private
 
   def parse(text)
     # This bullet-proofing is for robustness, and is probably unnecessary.
-    str = "\n" + text.purify.delete("\r").to_utf8
+    str = text.purify.delete("\r").to_utf8
     
     Maruku.new(str, {:math_enabled => true, :math_numbered => ['\\[','\\begin{equation}']}).to_html
   end
