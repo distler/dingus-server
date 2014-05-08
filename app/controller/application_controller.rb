@@ -17,7 +17,7 @@ include ActionController::Instrumentation
     else
       s = '<p>You must supply a <code>text</code> parameter.</p>'
     end
-    self.content_type = 'application/json; charset=utf-8'
+    self.content_type = 'application/json'
     self.response_body = {'name' => parser_name, 'version' => parser_version, 'html' => s}.to_json
   end
 

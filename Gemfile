@@ -8,7 +8,7 @@ gem "railties",   "~> 3.2"
 gem "tzinfo"
 gem 'json'
 gem "syntax", "~> 1.1.0"
-gem "itextomml", ">=1.5.0"
+gem "itextomml", ">=1.5.1"
 gem "maruku", :git => 'http://github.com/distler/maruku.git', :branch => 'nokogiri'
 
 # Let's use thin
