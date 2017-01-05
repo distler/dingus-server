@@ -1,5 +1,5 @@
-Dingus.routes.draw do
+Rails.application.routes.draw do
   
-  match "/json" => "dingus#json"
+  get "/json", to: "dingus#json"
 
 end

@@ -1,3 +1,3 @@
-require ::File.expand_path('../config/environment',  __FILE__)
+require_relative 'config/environment'
 puts ">> Starting Dingus server in #{Rails.env}"
-run Dingus
+run Rails.application

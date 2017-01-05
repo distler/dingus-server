@@ -4,7 +4,6 @@ require 'itex_stringsupport'
 require 'json'
 
 class DingusController < ActionController::Metal
-include ActionController::RackDelegation
 include ActionController::Instrumentation
 
   def json
