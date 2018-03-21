@@ -10,6 +10,7 @@ module Dingus
 
     # Enable cache classes.
     config.cache_classes = true
+    config.eager_load = true
     config.active_support.deprecation = :notify
     # remove some middleware we don't need
     config.middleware.delete "Rack::Lock"
