@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   
-  get "/json", to: "dingus#json"
+  get "/json", to: "application#json"
 
 end

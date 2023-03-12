@@ -3,7 +3,7 @@ require 'maruku/ext/math'
 require 'itex_stringsupport'
 require 'json'
 
-class DingusController < ActionController::Metal
+class ApplicationController < ActionController::Metal
 include ActionController::Instrumentation
 
   def json

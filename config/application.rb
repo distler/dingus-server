@@ -8,15 +8,16 @@ Bundler.require(*Rails.groups)
 module Dingus
   class Application < Rails::Application
 
+    # config.api_only = true
     # Enable cache classes.
     config.cache_classes = true
     config.eager_load = true
     config.active_support.deprecation = :notify
     # remove some middleware we don't need
-    config.middleware.delete "Rack::Lock"
-    config.middleware.delete "ActionDispatch::Flash"
-    config.middleware.delete "ActionDispatch::Cookies"
-    config.middleware.delete "ActionDispatch::Session::CookieStore"
+    config.middleware.delete ::Rack::Lock
+    config.middleware.delete ActionDispatch::Flash
+    config.middleware.delete ActionDispatch::Cookies
+    config.middleware.delete ActionDispatch::Session::CookieStore
 
   end
 end
