@@ -1,12 +1,12 @@
 GIT
   remote: http://github.com/distler/maruku.git
-  revision: d56b03f95609d2de64dae10c513e30d9ea0bf5df
+  revision: 33599bc40bf49da3f4d6c532229763f5cfc51ab9
   branch: nokogiri
   specs:
     maruku (0.7.3.beta1)
       itextomml (>= 1.5.0)
       nokogiri (~> 1.5, >= 1.5.6)
-      syntax (~> 1.1.0)
+      syntax (>= 1.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -63,29 +63,29 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     itextomml (1.6.1)
-    json (2.19.4)
+    json (2.19.5)
     logger (1.7.0)
     loofah (2.25.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mini_portile2 (2.8.9)
-    minitest (6.0.5)
+    minitest (6.0.6)
       drb (~> 2.0)
       prism (~> 1.5)
     mutex_m (0.3.0)
     nio4r (2.7.5)
-    nokogiri (1.19.2)
+    nokogiri (1.19.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.19.2-aarch64-linux-gnu)
+    nokogiri (1.19.3-aarch64-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.19.2-arm-linux-gnu)
+    nokogiri (1.19.3-arm-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.19.2-arm64-darwin)
+    nokogiri (1.19.3-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.19.2-x86_64-darwin)
+    nokogiri (1.19.3-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.19.2-x86_64-linux-gnu)
+    nokogiri (1.19.3-x86_64-linux-gnu)
       racc (~> 1.4)
     pp (0.6.3)
       prettyprint
@@ -94,7 +94,7 @@ GEM
     psych (5.3.1)
       date
       stringio
-    puma (8.0.0)
+    puma (8.0.1)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.6)
