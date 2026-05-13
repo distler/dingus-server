@@ -2,6 +2,8 @@
 .DS_Store
 tmp/*/*
 log/*.log
+log/*.log.*
+secret
 config/database.yml
 vendor/rails
 db/*.sqlite

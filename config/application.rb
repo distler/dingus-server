@@ -19,5 +19,11 @@ module Dingus
     config.middleware.delete ActionDispatch::Cookies
     config.middleware.delete ActionDispatch::Session::CookieStore
 
+    secret_file = Rails.root.join('secret')
+    if ENV['SECRET_KEY_BASE'].present?
+      config.secret_key_base = ENV['SECRET_KEY_BASE']
+    elsif File.exist?(secret_file)
+      config.secret_key_base = File.read(secret_file).strip
+    end
   end
 end
