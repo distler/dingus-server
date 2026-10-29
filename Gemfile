@@ -8,6 +8,7 @@ gem "railties",   "~> 8.1.3"
 gem "tzinfo"
 gem 'json', "~> 2.0"
 gem "syntax", "~> 1.1.0"
+gem "pstore"
 gem "itextomml", ">=1.6.0"
 gem "maruku", :git => 'http://github.com/distler/maruku.git', :branch => 'nokogiri'
 
